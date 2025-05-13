@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notion 列印頁面</title>
+  <link href="./styles/tailwind.css" rel="stylesheet">
+  <link href="./styles/print.css" rel="stylesheet">
+</head>
+<body class="max-w-[794px] mx-auto p-8 print:p-4 bg-white">
+  <h1 class="text-2xl font-bold mb-4">輸入 Notion Page ID</h1>
+  <input id="pageId" class="border p-2 w-full mb-4" placeholder="例如: 1e5b75a84d7e8037a156fefc949e0d34">
+  <button onclick="loadPage()" class="bg-blue-500 text-white px-4 py-2">載入頁面</button>
+  <div id="notionContent" class="mt-8"></div>
+  <script src="./scripts/fetchNotionBlocks.js"></script>
+</body>
+</html>
