@@ -1,0 +1,10 @@
+@media print {
+  body {
+    box-shadow: none;
+    margin: 0;
+    background: white;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+}
